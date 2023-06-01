@@ -25,3 +25,60 @@ print(glossary['tuples'])
 print(glossary['list'])
 print(glossary['function'])
 print(glossary['dictionary'])
+
+
+#looping through dictionary
+students_course = {'sophia':'dataanalysis',
+                   'emeka':'coding',
+                   'chisom':'graphic designer',
+                   'gift':'computer',
+                   'hope':'cybersecurity',
+                   }
+for key, value in students_course.items():
+    print("key:" + key)
+    print("value:" + value)
+
+
+# concantenation
+for names, courses in students_course.items():
+    print(names.title() + ' is learning ' + courses)
+
+
+# looping through keys
+
+students_course = {'sophia':'dataanalysis',
+                   'emeka':'coding',
+                   'chisom':'graphic designer',
+                   'gift':'computer',
+                   'hope':'cybersecurity',
+                   }
+for names in students_course.keys():
+    print(names)
+
+friends =["sophia", "gift"]
+
+if names in friends:
+    print(" are happy ")
+else:
+    print(" are sad ")
+
+#river and country
+rivers_country = {"nile": "egypt",
+                  "mississippi": "united states of america",
+                  "volga": "europe"
+                  }
+
+#concatenation
+for rivers, country in rivers_country.items():
+    print(" The " + rivers.title() + " runs through " + country.title())
+
+#loop through keys
+for rivers in rivers_country.keys():
+    print(rivers)
+
+#loop through values
+for country in rivers_country.values():
+    print(country)
+
+
+
